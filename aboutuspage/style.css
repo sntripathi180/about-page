@@ -1,0 +1,271 @@
+/* Navbar */
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 1rem;
+}
+
+a:hover {
+  color: gold;
+}
+
+.navbar {
+  padding: 5%;
+  padding-top: 2%;
+  width: 100%;
+  height: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .logo a {
+  font-size: 1.5rem;
+  font-weight: 1.5rem;
+}
+
+.navbar .links {
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar .toggle-btn {
+  color: aliceblue;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+.action-btn {
+  background-color: darkgreen;
+  color: aliceblue;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.action-btn:hover {
+  color: aliceblue;
+  scale: 1.05;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  right: 2rem;
+  top: 60px;
+  height: 0px;
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown-menu.open {
+  height: 180px;
+}
+
+.dropdown-menu li {
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown-menu .action-btn {
+  width: 100%;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* Responsive navbar */
+@media (max-width: 992px) {
+  .navbar .links,
+  .navbar .action-btn {
+    display: none;
+  }
+  .navbar .toggle-btn {
+    display: block;
+  }
+
+  .dropdown-menu {
+    display: block;
+  }
+}
+
+@media (max-width: 576px) {
+  .dropdown-menu {
+    left: 2rem;
+    width: unset;
+  }
+}
+
+/* MEGA MENU */
+
+.megamenu {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 23px -21px rgba(0, 0, 0, 0.25);
+  z-index: -99;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.mega-menu-content {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem;
+}
+
+.megamenu-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.header-megamenu {
+  font-weight: 600;
+  color: darkgray;
+  margin-bottom: 1rem;
+}
+
+.megamenu a {
+  font-weight: 500;
+  color: black;
+}
+
+.megamenu-link a:hover {
+  color: deeppink;
+}
+
+.megamenu-link p {
+  font-size: 0.6075rem;
+  font-weight: 400;
+  color: beige;
+}
+
+#Features :hover .megamenu {
+  color: deeppink;
+  visibility: visible;
+  transition: all 0.3 ease;
+  opacity: 1;
+}
+
+/* Welcome Text & Animation */
+.wel {
+  color: white;
+  justify-content: center;
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  padding: 4%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.wel p {
+  color: darkgrey;
+  justify-content: center;
+  text-align: center;
+  margin-top: 15%;
+  margin-bottom: 0%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.lrn-more {
+  display: block;
+  color: black;
+  font-weight: 600;
+  text-align: center;
+  padding: 8px;
+  margin-left: 40%;
+  margin-right: 40%;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.lrn-more :hover {
+  color: goldenrod;
+}
+
+/* END STATEMENT */
+.nd-statement {
+  color: white;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 4%;
+}
+
+#VR {
+  color: crimson;
+  font-weight: 700;
+}
+/* .wel {
+  width: 246px;
+  background-color: black;
+  align-self: center;
+  overflow: hidden;
+}
+
+.wel .text {
+  position: relative;
+  color: cornflowerblue;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.wel .text .first-text {
+  color: white;
+}
+
+.text .sec-text:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  border-left: 2px solid cornflowerblue;
+  animation: animate 4s steps(12) infinite;
+}
+
+@keyframes animate {
+  40%,
+  60% {
+    left: calc(100% + 4px);
+  }
+  100% {
+    left: 0%;
+  }
+} */
+
+/* Body */
+body {
+  /* min-height: 400px; */
+  background-size: cover;
+  background-image: url("bg_lalit.jpg");
+  background-position: center;
+  background-repeat: repeat;
+}
